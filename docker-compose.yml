@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  dynamo:
+    image: amazon/dynamodb-local
+    ports:
+      - "8000:8000"
+    command:
+      - '-jar'
+      - 'DynamoDBLocal.jar'
+      - '-dbPath'
+      - '/var/lib/dynamodblocal/data'
+    volumes:
+      - './dynamodblocal-data:/var/lib/dynamodblocal/data'
+
