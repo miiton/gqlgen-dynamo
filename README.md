@@ -1,0 +1,2 @@
+# gqlgen-dynamo
+gqlgen + dynamo
